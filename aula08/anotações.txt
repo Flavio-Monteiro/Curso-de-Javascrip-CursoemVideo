@@ -74,3 +74,11 @@ OPERADOR TERNÁRIO
 
 TEST [?] true [:] False
 média >=7.0 [?]"aprovado"[:] "reprovado
+
+
+//SELECIONANDO ELEMENTOS COM OS METODOS
+ [getElementByTagName]
+ [ID]
+ [NAME]
+ [CLASS]
+[ SELETOR]
