@@ -22,7 +22,14 @@
     <div>clique em mim</div>
 
     <script>
-
+       /* window.document.write('Olá, mundo!')//exibe a mensagem na tela.
+        window.document.write(window.document.URL)//mostra a URL(emdereço do site)
+        window.document.write(window.navigator.appName)//mostra o tipo do navegador*/
+        var corpo=window.document.body //cria uma variável para o [body]
+        var p1 = window.document.getElementsByTagName('p')[0] //criou uma variavel no parágrafo [p]
+        window.document.write('esta escrito assim: '+ p1.innerText) //adcionou a variável [p] ao 2° parágrafo, então o conteúdo sera add ao 2° parágrafo.
+        p1.style.color='green' //altera a cor do texto
+        corpo.style.background = '#2C3639'
     </script>
 </body>
 </html>
