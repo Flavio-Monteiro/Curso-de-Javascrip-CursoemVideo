@@ -8,28 +8,59 @@
 </head>
 <style>
     body{
+        
         font-family: sans-serif;
         background-color: rgb(80, 131, 188);
         color: whitesmoke;
     }
+    #container{
+            width: 650px;
+            height: 250px;
+            border: 1px solid white;
+        }
 </style>
 <body>
-    <h1>
-        Iniciando estudos em DOM
-    </h1>
+    <h1> Selecionando conteúdo por Marca </h1>
+    <h2 id="msg">Selecionando Elementos por ID</h2>
+    <H2 id="msgs">Selecionando conteúdo por SELETOR</H2>
     <p>aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em Javscript</p>
     <div>clique em mim</div>
+    <div id="container">
+        <h3>Alterando backgroundo do box</h3>
+    </div>
 
     <script>
        /* window.document.write('Olá, mundo!')//exibe a mensagem na tela.
         window.document.write(window.document.URL)//mostra a URL(emdereço do site)
         window.document.write(window.navigator.appName)//mostra o tipo do navegador*/
+
+
+                //SELECIONANDO ELEMENTOS POR [MARCAS]
         var corpo=window.document.body //cria uma variável para o [body]
         var p1 = window.document.getElementsByTagName('p')[0] //criou uma variavel no parágrafo [p]
+
+
         window.document.write('esta escrito assim: '+ p1.innerText) //adcionou a variável [p] ao 2° parágrafo, então o conteúdo sera add ao 2° parágrafo.
+
         p1.style.color='green' //altera a cor do texto
+
         corpo.style.background = '#2C3639'
+        corpo.style.fontSize='1.2em'
+
+        var d=window.document.getElementById('msg')
+        d.innerText='Selecionei elementos por ID' //<-- modifica o conteúdo do documento selecionado.
+
+        var e=window.document.querySelector('div#msgs')
+        d.style.color='#A27B5C'
+
+        var box=window.document.querySelector('div#container')
+        box.style.background='#DCD7C9'
+        var box=window.document.querySelector('div#container')
+        box.style.color='#2C3639'
+        var box=window.document.querySelector('div#container')
+       
+        
     </script>
 </body>
 </html>

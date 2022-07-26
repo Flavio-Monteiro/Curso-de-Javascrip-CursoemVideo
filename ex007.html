@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-brn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin:  0 auto;
+    box-sizing: border-box;
+   }
+   body{
+    font-family: sans-serif;
+    color: wheat;
+    font-size: 1em;
+    background-color: #125B50;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column ;
+    height: 100vh;
+    width: 100vw;
+   }
+   #container-somar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid wheat;
+    width: 550px;
+    height: 150px;
+   }
+   h1{
+    padding: 10px;
+   }
+</style>
+<body>
+   
+        <h1>Somando Valores.</h1>
+        <input type="number" name="txtn1" id="txtn1">+
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="somar" onclick="somar()">
+        <div id="res">Resultado</div>
+
+    <script>
+        function somar(){
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 =window.document.querySelector('input#txtn2')
+            var res = window.document.getElementById('res')
+            var n1= Number(tn1.value)
+            var n2= Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = ` A soma entre ${n1} e ${n2} é igual a: ${s}`
+        }
+    </script>
+</body>
+</html>
