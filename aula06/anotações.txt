@@ -73,9 +73,9 @@ var teste = 'java script’
 
 ‘eu estou aprendendo’ + teste
 `eu estou aprendendo ${teste}` -> não esqueça de usar crase!
-teste.length                   // conta quantos caracteres tem na variável  
+teste.length              // conta quantos caracteres tem na variável  
 teste.toUpperCase        // coloca tudo em caixa alta
-teste.toLowerCase        // coloca tudo em minúsculo 
+teste.toLowerCase       // coloca tudo em minúsculo 
 
 ________________________________________________________________________
 
@@ -83,9 +83,9 @@ Formatando números:
 
 Var n1 = 1543.5
 
-n1.toFixed(2)                                                                              // Coloca em duas casas decimais (para colocar em mais ou menos casas troque o numero entre parênteses)
-n1.toLocaleString( ‘pt-BR’,{style: ‘currecy’, currency: ‘BRL’} )    // Coloca o R$ na frente do numero (pode trocar entre outras                                                                                                                 moedas)
-n1.replace (‘.’, ‘,’)                                                                       // Troca o ponto pela virgula
+n1.toFixed(2)   // Coloca em duas casas decimais (para colocar em mais ou menos casas troque o numero entre parênteses)
+n1.toLocaleString( ‘pt-BR’,{style: ‘currecy’, currency: ‘BRL’} )    // Coloca o R$ na frente do numero (pode trocar entre outras moedas)
+n1.replace (‘.’, ‘,’) // Troca o ponto pela virgula
 
 ________________________________________________________________________
 //Operadores de operação
