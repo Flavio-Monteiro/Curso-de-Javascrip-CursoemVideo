@@ -7,11 +7,13 @@ if (vel>60){
 }
 var dolar =5.26
 var real =100
-var conversao =Number (  real/dolar)
+var conversaord =Number (  real/dolar)
+var conversaodr =Number (dolar*real)
 
 console.log(`Valor do dólar U$ ${dolar}`)
 console.log(`Valor em Real R$ ${real}`)
-console.log(`Valor da conversão é: U$ ${conversao.toFixed(2)} `)
+console.log(`R$ ${real.toFixed(2)} convertidos em dolár U$ ${conversaord.toFixed(2)} `)
+console.log(`U$ ${dolar.toFixed(2)} convertidos em: R$  ${conversaodr.toFixed(2)}`)
 
 
 
