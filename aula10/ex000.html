@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-brn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<style>
+
+</style>
+
+<body>
+    <main class="main">
+        <section id="enunciado">
+            <h1>Exercícios de Converter Dólar Para Real..</h1>
+            <h2>Resolva os Problemas Matemáticos Envolvendo a Conversão de Moedas.</h2>
+            <h4>Faça a conversão conforme solicitado.</h4><br>
+        </section>
+        <section id="quest01">
+           
+        <section id="quest02">
+            <div id="enunciado">
+                <h2>Questão02</h2>
+                <p>Pedro Ganha um salário de R$ 2.500 reais
+                    e suas despesas dividem-se no seguinte:
+                </p>
+            </div>
+            <ul id="listas">
+                <li>Internet</li>R$ <input type="number" name="internet" id="internet">
+                <li>Faculdade</li>R$ <input type="number" name="faculdade" id="faculdade">
+                <li>Alimentação</li>R$ <input type="number" name="alimentacao" id="alimentacao">
+                <li>Lazer</li>R$ <input type="number" name="lazer" id="lazer">
+                <div id="converter">
+                    <input type="button" value="somar" id="somar" onclick="somar()">
+                </div>
+            </ul>
+        </section>
+        <section id="res">Total de despesas</section>
+    </main>
+
+    <script>
+        function() {
+            var valor01 = window.document.getElementById('internet')
+            var valor02 = window.document.getElementById('#faculdade')
+            var valor03 = window.document.getElementById('alimantacao')
+            var valor04 = window.document.getElementById('lazer')
+            var res = window.document.getElementById('res')
+            var v1 = Number(valor01.value)
+            var v2 = Number(valor02.value)
+            var v3 = Number(valor03.value)
+            var v4 = Number(valor04.value)
+            var totaldespesas = v1+v2+v3+v4
+            res.innerHTML = totaldespesas
+        }
+
+    </script>
+</body>
+
+</html>
+
+<!--
+    <!DOCTYPE html>
+<html lang="pt-brn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somando números</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<style>
+    
+</style>
+<body>
+        <main class="main">
+            <section id="enunciado">
+                <h1>Exercícios de Converter Dólar Para Real..</h1>
+                <h2>Resolva os Problemas Matemáticos Envolvendo a Conversão de Moedas.</h2>
+                <h4>Faça a conversão conforme solicitado.</h4><br>
+            </section>
+            <section id="quest01">
+                <p>Em Junho de 2022 US$ 1.00 valia R$ 5,17. <br> Com esta cotação quanto seria necessário em reais para Comprar 100 Dólares?</p><br>
+                <h3>Conversao Dólar para Real</h3>
+            </section>
+            <section id="imputs">
+                <div>
+                    <h4>Valor em Dolar</h4> <br>U$
+                    <div id="valor1"><input type="number" name="txtn1" id="txtn1"></div>
+                </div>
+                <div>
+                    <h4>Valor a ser convertido</h4><br> em R$
+                    <div id="valor2"><input type="number" name="txtn2" id="txtn2"></div>
+                </div>
+                <div id="converter">
+                    <input type="button" value="somar" id="somar" onclick="somar()">
+                </div>               
+            </section>
+            <div id="res">Resultado</div><br>
+           
+        </main>
+</body>
+</html>
+
+-->

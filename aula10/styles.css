@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+*{
+    padding: 0;
+    margin:  0 auto;
+    box-sizing: border-box;
+   }
+   html{
+    height: 100vh;
+    width: 100vw;
+   }
+   body{
+    font-family: sans-serif;
+    color: wheat;
+    font-size: 1em;
+    background-color: #125B50;
+    height: 100vh;
+    min-width: 100vw;
+   }
+.main{
+    width: 100vw;
+    min-height: 100vh;
+    border: 1px solid wheat;
+    text-align: center;
+   
+}
+.bloco01{
+    display: flex;
+    
+}
+#enunciado{
+    margin-top: 20px;
+    border: 1px solid wheat;
+    max-width: 650px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#quest01{
+    border: 1px solid wheat;
+    max-width: 650px;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+#imputs{
+    border:  1px solid wheat;
+    max-width: 650px;
+    min-height: 300px;
+   
+   
+}
+#somar{
+    width: 100px;
+    height:30px;
+ 
+  
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+   #txtn1,#txtn3,#txtn4{
+    text-align: center;
+    width: 150px;
+    height:30px;
+    margin-bottom: 10px
+   }
+    #txtn2{
+    text-align: center;
+    width: 150px;
+    height:30px;
+   }
+   #res{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 650px;
+    height: 30px;
+    margin-top: 10px;
+    border:  1px solid wheat;
+   }
+   #listas{
+    border: 1px solid wheat;
+    max-width: 650px;
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style-type: none;
+   }

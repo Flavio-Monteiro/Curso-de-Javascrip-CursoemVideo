@@ -10,13 +10,14 @@ function calcular(){
         res.innerHTML += 'Dirija Sempre com cinto de Segurança!'
     }
 
-
-
-    var cotacaous = window.document.querySelector('input#dolar')
-    var cotacaobr = window.document.querySelector('input#real')
-    var cotacaovalo = cotacaous * cotacaobr 
-    var resultado = window.document.querySelector('result')
-    resultado.innerHTML=cotacavalo
-
 }
-console.log('cotacaovalo')
+function somar(){
+    var dolarUS = window.document.querySelector('imput#dolar')
+    var realRS = window.document.querySelector('imput#real')
+    var resultado = window.document.getElementById('result')
+    var US = Number('dolarUs.value')
+    var RS = Number('ralRS.value')
+    var conversao = US/RS
+    resultado.innerHTML = conversao
+    
+}

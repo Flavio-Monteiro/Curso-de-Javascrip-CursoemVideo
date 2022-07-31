@@ -5,58 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somando números</title>
+    <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <style>
-    *{
-    padding: 0;
-    margin:  0 auto;
-    box-sizing: border-box;
-   }
-   body{
-    font-family: sans-serif;
-    color: wheat;
-    font-size: 1em;
-    background-color: #125B50;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction:column ;
-    height: 100vh;
-    width: 100vw;
-   }
-   #container-somar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid wheat;
-    width: 550px;
-    height: 150px;
-   }
-   h1{
-    padding: 10px;
-   }
-   #txtn1{
-    text-align: center;
-    width: 150px;
-    height:30px;
-   }
-    #txtn2{
-    margin-bottom: 10px;
-    text-align: center;
-    width: 150px;
-    height:30px;
-   }
-   #res{
-    margin-top: 20px;
-   }
+    
 </style>
 <body>
-        <h1>Somando Valores.</h1>
-        <input type="number" name="txtn1" id="txtn1">+
-        <input type="number" name="txtn2" id="txtn2">
-        <input type="button" value="somar" onclick="somar()">
-        <div id="res">Resultado</div>
+        <main class="main">
+            <section id="enunciado">
+                <h1>Exercícios de Converter Dólar Para Real..</h1>
+                <h2>Resolva os Problemas Matemáticos Envolvendo a Conversão de Moedas.</h2>
+                <h4>Faça a conversão conforme solicitado.</h4><br>
+            </section>
+            <section id="quest01">
+                <p>Em Junho de 2022 US$ 1.00 valia R$ 5,17. <br> Com esta cotação quanto seria necessário em reais para Comprar 100 Dólares?</p><br>
+                <h3>Conversao Dólar para Real</h3>
+            </section>
+            <section id="imputs">
+                
+                <div class="bloco01">
+                    <div>
+                        <h4>Internet</h4> <br>
+                        <div id="valor1">R& <input type="number" name="txtn1" id="txtn1"></div>
+                    </div>
+                    <div>
+                        <h4>Faculdade</h4><br>
+                        <div id="valor2">R& <input type="number" name="txtn2" id="txtn2"></div>
+                    </div>
+                </div>
+
+                <div class="bloco01">
+                    <div>
+                        <h4>Alimentação</h4><br>
+                        <div id="valor2">R& <input type="number" name="txtn3" id="txtn3"></div>
+                    </div>
+                    <div>
+                        <h4>Lazer</h4><br>
+                        <div id="valor2">R& <input type="number" name="txtn4" id="txtn4"></div>
+                    </div>
+                </div>
+
+                <div id="converter">
+                    <input type="button" value="somar" id="somar" onclick="somar()">
+                </div>               
+            </section>
+            <div id="res">Resultado</div><br>
+           
+        </main>
 </body>
 </html>
