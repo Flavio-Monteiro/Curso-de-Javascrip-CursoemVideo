@@ -1,3 +1,5 @@
+//Comdições aninhadas
+
 var idade = 66
 if(idade<16){
     console.log('Não vota')
