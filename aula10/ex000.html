@@ -43,7 +43,7 @@
     </main>
 
     <script>
-        function() {
+        function somar() {
             var valor01 = window.document.getElementById('internet')
             var valor02 = window.document.getElementById('#faculdade')
             var valor03 = window.document.getElementById('alimantacao')
@@ -53,8 +53,8 @@
             var v2 = Number(valor02.value)
             var v3 = Number(valor03.value)
             var v4 = Number(valor04.value)
-            var totaldespesas = v1+v2+v3+v4
-            res.innerHTML = totaldespesas
+            var total = v1+v2+v3+v4
+            res.innerHTML = `o total de despesa é ${total}`
         }
 
     </script>
