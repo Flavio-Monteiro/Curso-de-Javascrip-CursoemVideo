@@ -29,6 +29,7 @@ main{
 header{
     color: white;
     text-align: center;
+    padding: 20px;
 }
 section{
     background-color: white;
