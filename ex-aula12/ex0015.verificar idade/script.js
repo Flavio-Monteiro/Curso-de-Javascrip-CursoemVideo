@@ -14,30 +14,37 @@ function verificar(){
         if (fsex[0].checked){
             genero = 'Homem'
 
-            if (idade >= 0 && idade <= 10){
+            if (idade >=0 && idade < 10){
                 //criança
-            }else if (idade > 21){
+                    img.setAttribute('src','crianca-h.png')
+            }else if (idade < 21){
                 //joven
+                img.setAttribute('src','joven-h.png')
             }else if(idade < 50){
                  //adlto
+                 img.setAttribute('src','adt-h.png')
             }else{
                 //idoso
+                img.setAttribute('src','idoso-h.png')
             }
-               
-
-        }else if (fsex[1].checked){
+         }else if (fsex[1].checked){
             genero = 'Mulher'
-            if (idade >= 0 && idade <=10){
+            if (idade >= 0 && idade <10){
             //criança
-            }else if (idade > 21){
-                //jove
-            }else if (idadde < 50){
+            img.setAttribute('src','crianca-m.png')
+            }else if (idade < 21){
+                //jovem
+                img.setAttribute('src','jovem-m.png')
+            }else if (idade<50){
                 //adulto
+                img.setAttribute('src','adulta-m.png')
             }else{
                 //idoso
+                img.setAttribute('src','idoso-m.png')
             }
         }
         res.innerHTML = `Detectamos ${genero} com ${idade} anos`
         res.style.textAlign ='center'
+        res.appendChild(img)
     }
 }
